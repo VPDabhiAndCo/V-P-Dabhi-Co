@@ -51,23 +51,24 @@ setInterval(() => {
 
 
 
-window.addEventListener('scroll',()=>{
-    if(window.pageYOffset >= 219){
+window.addEventListener('scroll', () => {
+    let scrollPosition = window.scrollY;
+    if (scrollPosition >= 3000 && scrollPosition <= 3180) {
         let valueDisplay = document.querySelectorAll(".num");
         let interval = 100;
 
-        valueDisplay.forEach((valueDisplay)=>{
+        valueDisplay.forEach((valueDisplay) => {
             let startValue = 0;
             let endValue = parseInt(valueDisplay.getAttribute("data-val"));
             let duration = Math.floor(interval / endValue);
-            
+
             let counter = setInterval(() => {
                 startValue += 1;
                 valueDisplay.textContent = startValue + "+";
-                if(startValue == endValue){
+                if (startValue == endValue || scrollPosition > 3426) {
                     clearInterval(counter);
                 }
             }, duration);
-        })
+        });
     }
 });
