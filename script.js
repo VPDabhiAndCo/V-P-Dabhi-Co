@@ -26,10 +26,10 @@ window.addEventListener('resize', function() {
 });
 
 
-
+// image slider
 const slides = document.querySelectorAll('.slide');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
+const prev = document.getElementById('leftBtn');
+const next = document.getElementById('rightBtn');
 
 let currentIndex = 0;
 
@@ -44,12 +44,36 @@ function updateSlide(){
     });
 }
 
-setInterval(() => {
+function startInterval() {
+    intervalID = setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlide();
+    }, 1500);
+}
+
+function stopInterval() {
+    clearInterval(intervalID);
+}
+
+prev.addEventListener("click",()=>{
+    stopInterval();
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlide();
+    startInterval();
+});
+
+next.addEventListener("click",()=>{
+    stopInterval(); // Stop interval when next button clicked
     currentIndex = (currentIndex + 1) % slides.length;
     updateSlide();
-}, 2500);
+    setTimeout(startInterval, 5000);
+});
 
 
+startInterval();
+
+
+// number counting
 
 window.addEventListener('scroll', () => {
     let scrollPosition = window.scrollY;
