@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Script  -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- box-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon.png">
+
+    <!-- awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	
+	<!--Title-->
+    <title>Contact Us</title>
+
+    <style>
+        .contactUs h1, h2, p{
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+
+</head>
+<body class="bg-gray-100">
+    
+    <!-- navbar -->
+    <nav class="flex items-center justify-between px-6 shadow-lg py-3 md:py-6 lg:px-20 fixed w-full z-50 bg-white">
+        <div class="logo flex items-center justify-center gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
+            <div>
+                <img class="w-full h-14 border-2 border-gray-400 p-2 rounded-md" src="image/CA-India-Logo.png" alt="">
+            </div>
+            <div class="">
+                <h1 class="text-[#175887] text-xl font-medium lg:text-3xl">V P Dabhi & Co.</h1>
+                <p class="text-[#52b947] text-sm lg:tracking-widest text-right">Chartered Accountant</p>
+            </div>
+        </div>
+        <ol class="hidden items-center justify-between gap-5 text-base font-medium uppercase text-blue-500 md:text-sm min-[772px]:flex">
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full"><a href="index.html">Home</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100"><a href="index.html?#services">Services</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100"><a href="index.html?#About">About</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100"><a href="index.html?#Industries">Industries</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100"><a href="index.html?#Gallery">Gallery</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100"><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div id="menuBar" class="menu text-black min-[772px]:hidden">
+            <i class="fa-solid fa-bars text-2xl"></i>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div id="ul" class="fixed top-0 right-0 bg-white w-[250px] h-screen z-50 hidden">
+        <div id="close" class="close absolute top-0 right-0 pt-8 px-8 min-[772px]:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#000000" fill-rule="evenodd" d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z" clip-rule="evenodd" opacity="1" data-original="#000000"></path></g></svg>
+        </div>
+        <ul class="flex flex-col items-start mt-12 px-7 pt-8 gap-5 text-base font-medium uppercase text-blue-500">
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full" onclick="closeMenu()"><a href="">Home</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100" onclick="closeMenu()"><a href="index.html?#services">Services</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100" onclick="closeMenu()"><a href="index.html?#About">About</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100" onclick="closeMenu()"><a href="index.html?#Industries">Industries</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100" onclick="closeMenu()"><a href="index.html?#Gallery">Gallery</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full md:opacity-60 hover:opacity-100" onclick="closeMenu()"><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- heropage -->
+    <div class="heropage text-center text-white m-auto flex flex-col items-center justify-center h-96 bg-center bg-cover bg-[url('https://wallpapers.com/images/hd/accounting-charts-and-calculator-cgo38sr66idh025c.jpg')] relative after:content[''] after:absolute after:bg-black/60 after:w-full after:h-full after:left-0 after:top-0 after:z-20">
+        <h1 class="text-4xl font-bold leading-tight md:text-[60px] z-40 relative max-w-max m-auto after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-white after:w-full after:h-[1px]">Contact Us</h1>
+    </div>
+
+
+    <div class="contactUs grid grid-cols-1 gap-6 gap-y-10 w-[95%] h-full m-auto text-center mt-12 p-12 rounded-md shadow-xl bg-white md:w-[90%] md:grid-cols-2 lg:grid-cols-3">
+        <div class="lg:border-r-2">
+            <div>
+                <h1 class="text-3xl font-semibold text-green-500">Get In Touch</h1>
+            </div>
+            <div class="mt-7">
+                <div>
+                    <h2 class="text-xl font-semibold text-blue-500">Work Inquiries</h2>
+                    <p class="text-gray-500 hover:text-blue-500 cursor-pointer"><a href="tel:88668 65166">88668 65166</a></p>
+                    <p class="text-gray-500 hover:text-blue-500 cursor-pointer"><a href="tel:81602 02845">81602 02845</a></p>
+                </div>
+                <div class="mt-12">
+                    <h2 class="text-xl font-semibold text-blue-500">Assistance Hours:</h2>
+                    <p class="text-gray-500">Mon - Fri 9:00am - 6:00pm</p>
+                    <p class="text-gray-500">Sat 11:00am - 3:30pm</p>
+                    <p class="text-gray-500">Sunday - CLOSED</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-2 pt-4 md:border-0">
+            <div>
+                <h1 class="text-2xl font-semibold text-green-500">Address and Mail</h1>
+            </div>
+            <div class="mt-7">
+                <div>
+                    <h2 class="text-xl font-semibold text-blue-500">Address</h2>
+                    <p class="text-gray-500">306 Shreyash Complex, Vejalpur, Ahmedabad, Gujarat</p>
+                </div>
+                <div class="mt-7">
+                    <h2 class="text-xl font-semibold text-blue-500">E-mail</h2>
+                    <p class="text-green-500 hover:text-green-400"><a href="mailto:cavishvajitsinhdabhi@gmail.com">cavishvajitsinhdabhi@gmail.com</a></p>
+                    <p class="text-green-500 hover:text-green-400"><a href="mailto:vpdabhiandco@gmail.com">vpdabhiandco@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-2 pt-4 lg:border-t-0 lg:border-l-2">
+            <div>
+                <h1 class="text-2xl font-semibold text-green-500">Social Media</h1> 
+            </div>
+            <div class="text-[#6C6C6C] flex items-center justify-center pt-6 space-x-6">
+                <a href="https://www.instagram.com/v.p.dabhi_and_co/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram text-lg bg-blue-200 p-2 w-8 h-8 flex items-center justify-center rounded-full text-blue-600 hover:to-blue-500 cursor-pointer"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin text-lg bg-blue-200 p-2 w-8 h-8 flex items-center justify-center rounded-full text-blue-600 hover:to-blue-500 cursor-pointer"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-[#333333] text-base px-6 pt-20 mt-24 lg:px-20">
+        <div class="flex items-start justify-between flex-wrap gap-y-9">
+            <div class="col-span-2">
+                <h2 class="text-xl text-white">Services</h2>
+                <div class="text-[#6C6C6C] pt-6 space-y-3">
+                    <p class="hover:text-white cursor-pointer"><a href="services/audit_services.html">Audit Services</a></p>
+                    <p class="hover:text-white cursor-pointer"><a href="services/allied_services.html">Allied Services</a></p>
+                    <p class="hover:text-white cursor-pointer"><a href="services/indirect_tax.html">Indirect Tax</a></p>
+                    <p class="hover:text-white cursor-pointer"><a href="services/direct_tax.html">Direct Tax</a></p>
+                    <p class="hover:text-white cursor-pointer"><a href="services/financial_management.html">Financial Management</a></p>
+                    <p class="hover:text-white cursor-pointer"><a href="services/business_advisory.html">Business Advisory</a></p>
+                </div>
+            </div>
+            <div class="text-[#6C6C6C] col-span-2">
+                <h2 class="text-xl text-white">Contact Us</h2>
+                <div class="text-[#6C6C6C] pt-6 space-y-3">
+                    <div class="flex items-start gap-3 group">
+                        <i class="fa-solid fa-location-dot group-hover:text-white"></i>
+                        <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46">
+                            <p class="hover:text-white cursor-pointer">306 Shreyash Complex, Vejalpur, Ahmedabad, Gujarat</p>
+                        </a>
+                    </div>
+                    <div class="flex items-start gap-3 group">
+                        <i class="fa-solid fa-phone group-hover:text-white"></i>
+                        <a href="tel:88668 65166">
+                            <p class="hover:text-white cursor-pointer">88668 65166</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <h2 class="text-xl text-white">Social</h2>
+                <div class="text-[#6C6C6C] pt-6 space-x-6">
+                    <a href="https://www.instagram.com/v.p.dabhi_and_co/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram text-lg hover:text-white cursor-pointer"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin text-lg hover:text-white cursor-pointer"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-start mt-12 py-12">
+            <div class="text-[#969794] flex items-center gap-2 flex-wrap">
+                <p>Copyright ©2024 All rights reserved by:</p>
+                <span class="text-blue-500 font-medium">V P Dabhi & Co.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');  /*font-family: 'Work Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');  /*font-family: 'Playfair Display', serif;*/
+
+*{
+  font-family: 'Work Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray; 
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+img{
+  width: 100%;
+  height: 100vh;
+}
+
+.slider-container {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+
+.slider{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.4s;
+}
+
+.slide img{
+  height: 100vh;
+  width: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width:768px){
+  .slider-container{
+      height: 450px;
+  }
+}
+
+@media (min-width: 1024px){
+  .slider-container{
+      height: 450px;
+  }
+}
