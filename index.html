@@ -21,10 +21,35 @@
 
     <!-- awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	
 	<!--Title-->
 	<title>V P Dabhi & CO</title>
+    
+    <style>
+        .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    </style>
 </head>
 <body class="relative">
 
@@ -38,7 +63,30 @@
     </div>
 
     <!-- navbar -->
-    <nav class="flex items-center justify-between px-6 shadow-lg py-3 md:py-6 lg:px-20 fixed w-full z-50 bg-white">
+    <nav class="flex items-center justify-between px-6 shadow-lg py-3 md:py-6 lg:px-20 z-50 bg-white">
+        <div class="logo flex items-center justify-center gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
+            <div>
+                <img class="w-full h-14 border-2 border-gray-400 p-2 rounded-md" src="image/CA-India-Logo.png" alt="">
+            </div>
+            <div class="">
+                <h1 class="text-[#175887] text-xl font-medium lg:text-3xl">V P Dabhi & Co.</h1>
+                <p class="text-[#52b947] text-sm lg:tracking-widest text-right">Chartered Accountant</p>
+            </div>
+        </div>
+        <ol class="hidden items-center justify-between gap-5 text-base font-medium uppercase md:text-sm min-[772px]:flex">
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="">Home</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#services">Services</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#About">About</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#Industries">Industries</a></li>
+            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="contactUs.html">Contact Us</a></li>
+        </ol>
+        <div class="menu text-black min-[772px]:hidden">
+            <i class="fa-solid fa-bars text-2xl"></i>
+        </div>
+    </nav>
+
+    <!-- navbar -->
+    <nav class="flex items-center justify-between px-6 shadow-lg py-3 fixed w-full top-0 md:py-6 lg:px-20 z-50 bg-white">
         <div class="logo flex items-center justify-center gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
             <div>
                 <img class="w-full h-14 border-2 border-gray-400 p-2 rounded-md" src="image/CA-India-Logo.png" alt="">
@@ -74,31 +122,30 @@
         </ul>
     </div>
 
-    <div class="slider-container h-full relative">
-        <div class="slider">
-            <div class="slide bg-[url('image/bg-1.jpg')] flex items-center justify-center bg-cover bg-center">
-                <div class="text-center flex flex-col items-center justify-center text-white">
+      <!-- Swiper -->
+    <div class="swiper mySwiper md:h-[70vh] lg:h-[85vh]">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg-[url(image/bg-1.jpg)] h-[60vh] lg:h-full bg-center bg-cover flex items-center justify-center text-white">
+                <div class="text-center flex flex-col items-center justify-center py-12">
                     <h1 class="text-4xl font-bold leading-tight md:text-[60px] z-40">Welcome to</h1>
                     <h1 class="text-4xl font-bold leading-tight md:text-[60px] z-40">V P Dabhi & CO</h1>
                     <p class="text-xs uppercase tracking-[3px] pt-4 md:pt-0 z-40">Chartered Accountant</p>
                 </div>
             </div>
-            <div class="slide bg-[url('image/bg-2.jpg')] flex items-center justify-center bg-cover bg-center">
-                <div class="text-center flex flex-col items-center justify-center text-white">
-                    <h1 class="text-4xl font-bold leading-tight lg:text-[60px] z-40">Partnering for Financial Success</h1>
-                    <p class="text-lg pt-4 md:w-[50%] mt-4 md:pt-0 z-40">Trust our Team Members to guide your financial journey with personalized solutions and expert insights, ensuring a prosperous future ahead</p>
+            <div class="swiper-slide bg-[url(image/bg-2.jpg)] h-[60vh] lg:h-full bg-center bg-cover flex items-center justify-center text-white">
+                <div class="text-center flex flex-col items-center justify-center py-12">
+                    <h1 class="text-3xl font-bold leading-tight lg:text-[60px] z-40">Partnering for Financial Success</h1>
+                    <p class="text-sm pt-4 md:w-[50%] md:mt-4 md:pt-0 z-40">Trust our Team Members to guide your financial journey with personalized solutions and expert insights, ensuring a prosperous future ahead</p>
                 </div>
             </div>
-            <div class="slide bg-[url('image/bg-3.jpg')] flex items-center justify-center bg-cover bg-center">
-                <div class="text-center flex flex-col items-center justify-center text-white">
-                    <h1 class="text-4xl font-bold leading-tight lg:text-[60px] z-40">Expert Financial Guidance</h1>
-                    <p class="text-lg pt-4 md:w-[50%] mt-4 md:pt-0 z-40">Unlock your financial potential with our team of Chartered Accountants. From strategic planning to meticulous analysis, we provide tailored solutions to drive your success forward, every step of the way.</p>
+            <div class="swiper-slide bg-[url(image/bg-3.jpg)] h-[60vh] lg:h-full bg-center bg-cover flex items-center justify-center text-white">
+                <div class="text-center flex flex-col items-center justify-center py-12">
+                    <h1 class="text-3xl font-bold leading-tight lg:text-[60px] z-40">Expert Financial Guidance</h1>
+                    <p class="text-sm pt-4 md:w-[50%] md:mt-4 md:pt-0 z-40">Unlock your financial potential with our team of Chartered Accountants. From strategic planning to meticulous analysis, we provide tailored solutions to drive your success forward, every step of the way.</p>
                 </div>
             </div>
         </div>
-        
-        <i id="leftBtn" class='bx bx-chevron-left absolute text-2xl text-white top-[50%] left-0 w-10 h-10 rounded-full flex items-center justify-center bg-gray-600'></i>
-        <i id="rightBtn" class='bx bx-chevron-right absolute text-2xl text-white top-[50%] right-0 w-10 h-10 rounded-full flex items-center justify-center bg-gray-600'></i>
+        <div class="swiper-pagination"></div>
     </div>
 
     <!-- services -->
@@ -114,7 +161,7 @@
                 </div>
                 <div class="py-8 px-4">
                     <h1 class="text-2xl font-medium">Audit Services</h1>
-                    <p class="text-[#5c7893] my-2">We not only provide traditional auditing but also our strategy and practice is to mix the technical, practical, and legal approach in each audit engagement. Our services also include the drafting of the Internal Audit manual and implementation</p>
+                    <p class="text-[#5c7893] my-2">We not only provide traditional auditing but also our strategy and practice is to mix the technical, practical, and legal approach in each audit engagement. Our services also include the drafting of the Internal Audit manual and implementation.</p>
                     <span class="text-blue-500"><a href="services/audit_services.html" class="flex items-center gap-1">View More<i class='bx bx-right-arrow-alt text-2xl'></i></a></span>
                 </div>
             </div>
@@ -190,7 +237,7 @@
             <div class="about">
                 <h1 class="text-[40px] font-medium relative max-w-max after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-black after:w-full after:h-[1px]">About Us</h1>
             </div>
-            <p class="text-base text-[#000000] opacity-50 py-6 leading-8">Vishvajitsinh Dabhi has founded its professional practice on the philosophy of dedication, discipline and determination. The vision is to maintain the highest level of professional ethics combined with client satisfaction through efficient and timely services</p>
+            <p class="text-base text-[#000000] opacity-50 py-6 leading-8">Vishvajitsinh Dabhi has founded its professional practice on the philosophy of dedication, discipline and determination. The vision is to maintain the highest level of professional ethics combined with client satisfaction through efficient and timely services.</p>
         </div>
     </section>
 
@@ -391,7 +438,7 @@
             <div class="text-[#6C6C6C] col-span-2">
                 <h2 class="text-xl text-white">Contact Us</h2>
                 <div class="text-[#6C6C6C] pt-6 space-y-3">
-                    <div class="flex items-start gap-3 group">
+                    <div class="flex items-center gap-3 group">
                         <i class="fa-solid fa-location-dot group-hover:text-white"></i>
                         <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46">
                             <p class="hover:text-white cursor-pointer">306 Shreyash Complex, Vejalpur, Ahmedabad, Gujarat</p>
@@ -414,8 +461,8 @@
             </div>
         </div>
         <div class="text-start mt-12 py-12">
-            <div class="text-[#969794] flex items-center gap-2 flex-wrap">
-                <p>Copyright ©2024 All rights reserved by:</p>
+            <div class="text-[#969794] flex items-center justify-center gap-2 flex-wrap md:justify-start">
+                <p class="text-center md:text-start">Copyright ©2024 All rights reserved by:</p>
                 <span class="text-blue-500 font-medium">V P Dabhi & Co.</span>
             </div>
         </div>
@@ -423,6 +470,29 @@
 
     <!-- scripts -->
     <script src="script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+  </script>
 
 </body>
 </html>
