@@ -462,7 +462,7 @@
         </div>
         <div class="text-start mt-12 py-12">
             <div class="text-[#969794] flex items-center justify-center gap-2 flex-wrap md:justify-start">
-                <p class="text-center md:text-start">Copyright ©2024 All rights reserved by:</p>
+                <p class="text-center md:text-start">Copyright ©<span id="current-year"></span> All rights reserved by:</p>
                 <span class="text-blue-500 font-medium">V P Dabhi & Co.</span>
             </div>
         </div>
@@ -476,6 +476,10 @@
 
     <!-- Initialize Swiper -->
     <script>
+	// year
+	document.getElementById("current-year").textContent = new Date().getFullYear();
+	
+	// swiper
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
