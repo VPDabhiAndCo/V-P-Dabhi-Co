@@ -10,6 +10,9 @@
     <!-- style -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- alpine -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <!-- google icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -22,36 +25,36 @@
     <!-- awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	
 	<!--Title-->
 	<title>V P Dabhi & CO</title>
     
     <style>
         .swiper {
-      width: 100%;
-      height: 100%;
-    }
+          width: 100%;
+          height: 100%;
+        }
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
     </style>
 </head>
-<body class="relative">
+<body class="relative" x-data="{ showSideBar : false }">
 
     <div class="fixed z-[50] top-[50%] md:top-[50%] right-0 flex flex-col translate-y-[50%] gap-3">
         <a href="tel:88668 65166" class="p-3 bg-blue-600 rounded-sm fill-black w-11 h-11 md:w-14 md:h-14 flex items-center justify-center">
@@ -80,49 +83,30 @@
             <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#Industries">Industries</a></li>
             <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="contactUs.html">Contact Us</a></li>
         </ol>
-        <div class="menu text-black min-[772px]:hidden">
-            <i class="fa-solid fa-bars text-2xl"></i>
-        </div>
-    </nav>
-
-    <!-- navbar -->
-    <nav class="flex items-center justify-between px-6 shadow-lg py-3 fixed w-full top-0 md:py-6 lg:px-20 z-50 bg-white">
-        <div class="logo flex items-center justify-center gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
-            <div>
-                <img class="w-full h-14 border-2 border-gray-400 p-2 rounded-md" src="image/CA-India-Logo.png" alt="">
-            </div>
-            <div class="">
-                <h1 class="text-[#175887] text-xl font-medium lg:text-3xl">V P Dabhi & Co.</h1>
-                <p class="text-[#52b947] text-sm lg:tracking-widest text-right">Chartered Accountant</p>
-            </div>
-        </div>
-        <ol class="hidden items-center justify-between gap-5 text-base font-medium uppercase md:text-sm min-[772px]:flex">
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="">Home</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#services">Services</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#About">About</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#Industries">Industries</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="contactUs.html">Contact Us</a></li>
-        </ol>
-        <div id="menuBar" class="menu text-black min-[772px]:hidden">
+        <div @click="showSideBar = !showSideBar" class="menu text-black min-[772px]:hidden">
             <i class="fa-solid fa-bars text-2xl"></i>
         </div>
     </nav>
 
     <!-- sidebar -->
-    <div id="ul" class="fixed top-0 right-0 bg-white w-[250px] h-screen z-50 hidden">
-        <div id="close" class="close absolute top-0 right-0 pt-8 px-8 min-[772px]:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#000000" fill-rule="evenodd" d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z" clip-rule="evenodd" opacity="1" data-original="#000000"></path></g></svg>
+    <div x-show="showSideBar" class="bg-black/30 w-full h-screen fixed top-0 left-0 z-50" style="display: none;">
+        <div x-show="showSideBar" @click.outside="showSideBar = false" class="fixed top-0 right-0 bg-white w-64 h-screen z-60 transform transition-transform duration-300 ease-in-out" id="sidebar">
+            <div @click="showSideBar = false" class="close absolute top-8 right-8 cursor-pointer p-2 text-gray-600 hover:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" class="fill-current">
+                    <path fill-rule="evenodd" d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <ul class="flex flex-col items-start mt-12 px-7 pt-8 gap-5 text-base font-medium uppercase text-blue-500">
+                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="#">Home</a></li>
+                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="#services">Services</a></li>
+                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="#About">About</a></li>
+                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="#Industries">Industries</a></li>
+                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="contactUs.html">Contact Us</a></li>
+            </ul>
         </div>
-        <ul class="flex flex-col items-start mt-12 px-7 pt-8 gap-5 text-base font-medium uppercase text-blue-500">
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full" onclick="closeMenu()"><a href="">Home</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full" onclick="closeMenu()"><a href="#services">Services</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full" onclick="closeMenu()"><a href="#About">About</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full" onclick="closeMenu()"><a href="#Industries">Industries</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full" onclick="closeMenu()"><a href="contactUs.html">Contact Us</a></li>
-        </ul>
     </div>
-
-      <!-- Swiper -->
+    
+    <!-- Swiper -->
     <div class="swiper mySwiper md:h-[70vh] lg:h-[85vh]">
         <div class="swiper-wrapper">
             <div class="swiper-slide bg-[url(image/bg-1.jpg)] h-[60vh] lg:h-full bg-center bg-cover flex items-center justify-center text-white">
@@ -395,8 +379,6 @@
         </div>
     </section>
 
-
-
     <!-- what people say -->
     <section class="bg-[#F8F9FA] px-6 py-20 mt-24 md:px-20">
         <div class="heading">
@@ -419,7 +401,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- footer -->
     <footer class="bg-[#333333] text-base px-6 pt-20 mt-24 lg:px-20">
@@ -467,9 +448,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- scripts -->
-    <script src="script.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
