@@ -3,172 +3,469 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Tailwind Script  -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
-    <!-- style -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="../style.css">
 
-    <!-- alpine -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <!-- google icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- box-icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-    <!-- favicon -->
     <link rel="shortcut icon" href="../image/favicon.png">
 
-    <!-- awesome icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	
-	<!--Title-->
-	<title>Indirect Tax</title>
+    <title>Direct Tax - V P Dabhi & Co.</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#667eea',
+                        secondary: '#764ba2',
+                        accent: '#f093fb',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="relative" x-data="{ showSideBar : false }">
 
-    <div class="fixed z-[50] top-[40%] md:top-[50%] right-0 flex flex-col translate-y-[50%] gap-3">
-        <a href="tel:88668 65166" class="p-3 bg-blue-600 rounded-sm fill-black w-11 h-11 md:w-14 md:h-14 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 322 322" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M275.445 135.123c.387-45.398-38.279-87.016-86.192-92.771-.953-.113-1.991-.285-3.09-.467-2.372-.393-4.825-.797-7.3-.797-9.82 0-12.445 6.898-13.136 11.012-.672 4-.031 7.359 1.902 9.988 3.252 4.422 8.974 5.207 13.57 5.836 1.347.186 2.618.359 3.682.598 43.048 9.619 57.543 24.742 64.627 67.424.173 1.043.251 2.328.334 3.691.309 5.102.953 15.717 12.365 15.717h.001c.95 0 1.971-.082 3.034-.244 10.627-1.615 10.294-11.318 10.134-15.98-.045-1.313-.088-2.555.023-3.381.03-.208.045-.417.046-.626z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path><path d="M176.077 25.688c1.275.092 2.482.18 3.487.334 70.689 10.871 103.198 44.363 112.207 115.605.153 1.211.177 2.688.202 4.252.09 5.566.275 17.145 12.71 17.385l.386.004c3.9 0 7.002-1.176 9.221-3.498 3.871-4.049 3.601-10.064 3.383-14.898-.053-1.186-.104-2.303-.091-3.281.899-72.862-62.171-138.933-134.968-141.39-.302-.01-.59.006-.881.047a6.09 6.09 0 0 1-.862.047c-.726 0-1.619-.063-2.566-.127C177.16.09 175.862 0 174.546 0c-11.593 0-13.797 8.24-14.079 13.152-.65 11.352 10.332 12.151 15.61 12.536zM288.36 233.703a224.924 224.924 0 0 1-4.512-3.508c-7.718-6.211-15.929-11.936-23.87-17.473a1800.92 1800.92 0 0 1-4.938-3.449c-10.172-7.145-19.317-10.617-27.957-10.617-11.637 0-21.783 6.43-30.157 19.109-3.71 5.621-8.211 8.354-13.758 8.354-3.28 0-7.007-.936-11.076-2.783-32.833-14.889-56.278-37.717-69.685-67.85-6.481-14.564-4.38-24.084 7.026-31.832 6.477-4.396 18.533-12.58 17.679-28.252-.967-17.797-40.235-71.346-56.78-77.428-7.005-2.576-14.365-2.6-21.915-.06-19.02 6.394-32.669 17.623-39.475 32.471-6.577 14.347-6.28 31.193.859 48.717 20.638 50.666 49.654 94.84 86.245 131.293 35.816 35.684 79.837 64.914 130.839 86.875 4.597 1.978 9.419 3.057 12.94 3.844 1.2.27 2.236.5 2.991.707.415.113.843.174 1.272.178l.403.002h.002c23.988 0 52.791-21.92 61.637-46.91 7.75-21.882-6.4-32.698-17.77-41.388zM186.687 83.564c-4.107.104-12.654.316-15.653 9.021-1.403 4.068-1.235 7.6.5 10.498 2.546 4.252 7.424 5.555 11.861 6.27 16.091 2.582 24.355 11.48 26.008 28 .768 7.703 5.955 13.082 12.615 13.082h.001c.492 0 .995-.029 1.496-.09 8.01-.953 11.893-6.838 11.542-17.49.128-11.117-5.69-23.738-15.585-33.791-9.929-10.084-21.898-15.763-32.785-15.5z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg>
-        </a>
-        <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46" class="p-3 bg-green-500 rounded-sm fill-black w-11 h-11 md:w-14 md:h-14 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M256 0C153.755 0 70.573 83.182 70.573 185.426c0 126.888 165.939 313.167 173.004 321.035 6.636 7.391 18.222 7.378 24.846 0 7.065-7.868 173.004-194.147 173.004-321.035C441.425 83.182 358.244 0 256 0zm0 278.719c-51.442 0-93.292-41.851-93.292-93.293S204.559 92.134 256 92.134s93.291 41.851 93.291 93.293-41.85 93.292-93.291 93.292z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg>
-        </a>
-    </div>
-    
-    <!-- navbar -->
-    <nav class="flex items-center justify-between px-6 shadow-lg py-3 md:py-6 lg:px-20 z-50 bg-white">
-        <div class="logo flex items-center justify-center gap-3 cursor-pointer" onclick="window.location.href = '../index.html'">
-            <div>
-                <img class="w-full h-14 border-2 border-gray-400 p-2 rounded-md" src="../image/CA-India-Logo.png" alt="">
-            </div>
-            <div class="">
-                <h1 class="text-[#175887] text-xl font-medium lg:text-3xl">V P Dabhi & Co.</h1>
-                <p class="text-[#52b947] text-sm lg:tracking-widest text-right">Chartered Accountant</p>
-            </div>
-        </div>
-        <ol class="hidden items-center justify-between gap-5 text-base font-medium uppercase md:text-sm min-[772px]:flex">
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="">Home</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#services">Services</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#About">About</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="#Industries">Industries</a></li>
-            <li class="relative max-w-max after:content[''] after:absolute after:bg-blue-500 after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:transition-all after:duration-300 cursor-pointer after:hover:w-full text-blue-500"><a href="contactUs.html">Contact Us</a></li>
-        </ol>
-        <div @click="showSideBar = !showSideBar" class="menu text-black min-[772px]:hidden">
-            <i class="fa-solid fa-bars text-2xl"></i>
-        </div>
-    </nav>
+<body class="bg-gradient-to-br from-gray-50 via-white to-purple-50 text-gray-900 antialiased scroll-smooth"
+      x-data="{
+          mobileMenu: false,
+          scrolled: false
+      }"
+      x-init="
+          window.addEventListener('scroll', () => {
+              scrolled = window.pageYOffset > 20;
+          });
+      "
+      x-effect="mobileMenu ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'">
 
-    <!-- sidebar -->
-    <div x-show="showSideBar" class="bg-black/30 w-full h-screen fixed top-0 left-0 z-50" style="display: none;">
-        <div x-show="showSideBar" @click.outside="showSideBar = false" class="fixed top-0 right-0 bg-white w-64 h-screen z-60 transform transition-transform duration-300 ease-in-out" id="sidebar">
-            <div @click="showSideBar = false" class="close absolute top-8 right-8 cursor-pointer p-2 text-gray-600 hover:text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor" class="fill-current">
-                    <path fill-rule="evenodd" d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z" clip-rule="evenodd"></path>
-                </svg>
-            </div>
-            <ul class="flex flex-col items-start mt-12 px-7 pt-8 gap-5 text-base font-medium uppercase text-blue-500">
-                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="#">Home</a></li>
-                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="#services">Services</a></li>
-                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="#About">About</a></li>
-                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="#Industries">Industries</a></li>
-                <li class="relative w-full py-2 cursor-pointer hover:text-blue-700 hover:bg-blue-100 px-2 rounded transition duration-300" onclick="closeMenu()"><a href="../contactUs.html">Contact Us</a></li>
+<div class="fixed right-8 bottom-8 z-50 flex flex-col gap-4">
+    <a href="tel:8866865166"
+       class="group relative w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300">
+        <i class="fas fa-phone text-white text-xl"></i>
+        <span class="absolute right-full mr-4 px-4 py-2 bg-gray-900 text-white rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all shadow-lg">
+                Call: 88668 65166
+            </span>
+    </a>
+
+    <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46"
+       class="group relative w-14 h-14 bg-gradient-to-br from-red-500 to-orange-500 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300">
+        <i class="fas fa-map-marker-alt text-white text-xl"></i>
+        <span class="absolute right-full mr-4 px-4 py-2 bg-gray-900 text-white rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all shadow-lg">
+                Location
+            </span>
+    </a>
+
+    <a href="#"
+       @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})"
+       x-show="scrolled"
+       x-transition:enter="transition ease-out duration-300"
+       x-transition:enter-start="opacity-0 scale-0"
+       x-transition:enter-end="opacity-100 scale-100"
+       class="w-14 h-14 bg-white border-2 border-purple-200 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 hover:border-primary">
+        <i class="fas fa-arrow-up text-primary text-xl"></i>
+    </a>
+</div>
+
+<nav class="fixed w-full z-40 transition-all duration-500"
+     :class="scrolled ? 'bg-white shadow-xl py-4' : 'bg-white/90 py-6'">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-4 group">
+                <img src="../image/CA-India-Logo.png" alt="CA Logo" class="w-14 h-14 object-contain border-2 border-gray-200 rounded-lg p-2 group-hover:border-primary transition-all">
+                <div>
+                    <h1 class="text-2xl font-bold text-primary font-serif">V P Dabhi & Co.</h1>
+                    <p class="text-xs text-gray-600 font-medium">Chartered Accountants</p>
+                </div>
+            </a>
+
+            <ul class="hidden lg:flex items-center gap-8">
+                <li><a href="../index.html" class="text-gray-700 hover:text-primary transition-colors font-medium relative group">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
+                </a></li>
+                <li><a href="../index.html#services" class="text-gray-700 hover:text-primary transition-colors font-medium relative group">
+                    Services
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
+                </a></li>
+                <li><a href="../index.html#about" class="text-gray-700 hover:text-primary transition-colors font-medium relative group">
+                    About
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
+                </a></li>
+                <li><a href="../index.html#industries" class="text-gray-700 hover:text-primary transition-colors font-medium relative group">
+                    Industries
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
+                </a></li>
+                <li>
+                    <a href="../contactUs.html"
+                       class="px-8 py-3 bg-gradient-to-br from-primary to-secondary text-white rounded-full font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden group">
+                        <span class="relative z-10">Contact Us</span>
+                        <span class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"></span>
+                    </a>
+                </li>
             </ul>
-        </div>
-    </div>
-    
-    <!-- heropage -->
-    <div class="heropage text-center text-white m-auto flex flex-col items-center justify-center h-96 bg-center bg-cover bg-[url('https://wallpapers.com/images/hd/accounting-charts-and-calculator-cgo38sr66idh025c.jpg')] relative after:content[''] after:absolute after:bg-black/60 after:w-full after:h-full after:left-0 after:top-0 after:z-20">
-        <h1 class="text-4xl font-bold leading-tight md:text-[60px] z-40 relative max-w-max m-auto after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-white after:w-full after:h-[1px]">Direct Tax</h1>
-    </div>
 
-
-    <div class=" px-3 py-12 lg:px-20">
-        <div class="grid grid-cols-1 gap-6">
-            <div class="overview">
-                <h1 class="text-3xl font-medium">Overview</h1>
-                <div class="flex flex-col items-start gap-5 mt-5 text-lg text-gray-600 md:pl-7">
-                    <p>Direct tax consultancy in India involves providing expert advice and strategies to optimize tax efficiency for businesses and individuals. This consultancy forms an essential part of making viable business decisions, helping clients achieve their financial goals. A "result-oriented approach" is adopted, focusing on flexibility, delivery, and value, which enhances the impact of commercially viable decisions and minimizes the tax burden.</p>
-                </div>
-            </div>
-
-            <div class="direct">
-                <h1 class="text-3xl font-medium">Direct Tax</h1>
-                <div class="flex flex-col items-start gap-5 mt-5 text-lg text-gray-600 md:pl-7">
-                    <p>Our firm provides comprehensive tax planning and advisory services to assist clients in optimizing their tax liabilities. We develop tax-efficient strategies, advise on the tax implications of business decisions, and structure transactions to minimize tax exposure.</p>
-                    <p>In terms of compliance and reporting, we ensure strict adherence to tax laws and regulations, prepare and file tax returns accurately and timely, and maintain proper documentation to support tax positions.</p>
-                    <p>We also offer representation and litigation support, representing clients before tax authorities during audits and assessments, assisting in preparing and presenting appeals against tax assessments, and providing support during tax litigation and dispute resolution.</p>
-                    <p>Our expertise extends to transfer pricing, where we advise on regulations and documentation, ensure compliance with arm's length pricing principles, and assist in preparing and filing transfer pricing reports.</p>
-                    <p>Additionally, we provide guidance on international taxation, advising on cross-border tax issues, structuring international transactions to optimize tax outcomes, and assisting with compliance under international tax treaties.</p>
-                    <p>The assessment and appeals process under the Indian Income Tax Act involves several steps to ensure accurate determination and collection of taxes. This includes self-assessment by taxpayers, assessment by tax authorities, and the appeals procedure, which progresses through various stages from the Commissioner (Appeals) to the Supreme Court.</p>
-                </div>
-            </div>
-
-            <div class="Services mt-6">
-                <h1 class="text-2xl md:text-3xl font-medium underline md:underline-offset-8">We provide following Direct Tax Services</h1>
-                <div class="flex flex-col items-start gap-5 mt-5 text-lg text-gray-600 md:pl-7">
-                    <li class="">ITR filing</li>
-                    <li class="">Income tax notice reply services</li>
-                    <li class="">NRI tax filing services</li>
-                    <li class="">TDS Returns preparation and Filing Services</li>
-                    <li class="">Various Form Filling services</li>
-                </div>
-            </div>
+            <button @click="mobileMenu = !mobileMenu"
+                    class="lg:hidden w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg">
+                <i class="fas text-white text-xl transition-transform duration-300"
+                   :class="mobileMenu ? 'fa-times' : 'fa-bars'"></i>
+            </button>
         </div>
     </div>
 
-    <!-- footer -->
-    <footer class="bg-[#333333] text-base px-6 pt-20 mt-24 lg:px-20">
-        <div class="flex items-start justify-between flex-wrap gap-y-9">
-            <div class="col-span-2">
-                <h2 class="text-xl text-white">Services</h2>
-                <div class="text-[#6C6C6C] pt-6 space-y-3">
-                    <p class="hover:text-white cursor-pointer"><a href="audit_services.html">Audit Services</a></p>
-                    <p class="hover:text-white cursor-pointer"><a href="allied_services.html">Allied Services</a></p>
-                    <p class="hover:text-white cursor-pointer"><a href="indirect_tax.html">Indirect Tax</a></p>
-                    <p class="hover:text-white cursor-pointer"><a href="direct_tax.html">Direct Tax</a></p>
-                    <p class="hover:text-white cursor-pointer"><a href="financial_management.html">Financial Management</a></p>
-                    <p class="hover:text-white cursor-pointer"><a href="business_advisory.html">Business Advisory</a></p>
-                </div>
-            </div>
-            <div class="text-[#6C6C6C] col-span-2">
-                <h2 class="text-xl text-white">Contact Us</h2>
-                <div class="text-[#6C6C6C] pt-6 space-y-3">
-                    <div class="flex items-center gap-3 group">
-                        <i class="fa-solid fa-location-dot group-hover:text-white"></i>
-                        <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46">
-                            <p class="hover:text-white cursor-pointer">306 Shreyash Complex, Vejalpur, Ahmedabad, Gujarat</p>
-                        </a>
-                    </div>
-                    <div class="flex items-start gap-3 group">
-                        <i class="fa-solid fa-phone group-hover:text-white"></i>
-                        <a href="tel:88668 65166">
-                            <p class="hover:text-white cursor-pointer">88668 65166</p>
-                        </a>
+    <div x-show="mobileMenu"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         @click="mobileMenu = false"
+         class="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
+
+        <div @click.stop
+             x-show="mobileMenu"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="translate-x-full"
+             x-transition:enter-end="translate-x-0"
+             x-transition:leave="transition ease-in duration-200"
+             x-transition:leave-start="translate-x-0"
+             x-transition:leave-end="translate-x-full"
+             class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl overflow-y-auto">
+
+            <div class="bg-gradient-to-br from-primary to-secondary p-6 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="../image/CA-India-Logo.png" alt="CA Logo" class="w-12 h-12 object-contain">
+                    <div>
+                        <h3 class="text-white font-bold font-serif text-lg">V P Dabhi & Co.</h3>
+                        <p class="text-white/80 text-xs">Chartered Accountants</p>
                     </div>
                 </div>
+                <button @click="mobileMenu = false" class="text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <div class="col-span-2">
-                <h2 class="text-xl text-white">Social</h2>
-                <div class="text-[#6C6C6C] pt-6 space-x-6">
-                    <a href="https://www.instagram.com/v.p.dabhi_and_co/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram text-lg hover:text-white cursor-pointer"></i></a>
-                    <a href="https://www.linkedin.com/company/v-pdabhi-co"><i class="fa-brands fa-linkedin text-lg hover:text-white cursor-pointer"></i></a>
+
+            <ul class="p-6 space-y-2">
+                <li>
+                    <a href="../index.html" @click="mobileMenu = false"
+                       class="block px-6 py-4 text-gray-700 hover:bg-purple-50 hover:text-primary rounded-xl transition-all font-medium flex items-center gap-3">
+                        <i class="fas fa-home w-5"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#services" @click="mobileMenu = false"
+                       class="block px-6 py-4 text-gray-700 hover:bg-purple-50 hover:text-primary rounded-xl transition-all font-medium flex items-center gap-3">
+                        <i class="fas fa-briefcase w-5"></i>
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#about" @click="mobileMenu = false"
+                       class="block px-6 py-4 text-gray-700 hover:bg-purple-50 hover:text-primary rounded-xl transition-all font-medium flex items-center gap-3">
+                        <i class="fas fa-info-circle w-5"></i>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#industries" @click="mobileMenu = false"
+                       class="block px-6 py-4 text-gray-700 hover:bg-purple-50 hover:text-primary rounded-xl transition-all font-medium flex items-center gap-3">
+                        <i class="fas fa-industry w-5"></i>
+                        Industries
+                    </a>
+                </li>
+                <li>
+                    <a href="../contactUs.html"
+                       class="block px-6 py-4 bg-gradient-to-br from-primary to-secondary text-white text-center rounded-xl font-semibold shadow-lg flex items-center justify-center gap-3">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+
+            <div class="p-6 border-t">
+                <p class="text-gray-600 text-sm mb-4">Connect with us</p>
+                <div class="flex gap-3">
+                    <a href="https://www.instagram.com/v.p.dabhi_and_co/"
+                       class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/v-pdabhi-co"
+                       class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="text-start mt-12 py-12">
-            <div class="text-[#969794] flex items-center justify-center gap-2 flex-wrap md:justify-start">
-                <p class="text-center md:text-start">Copyright ©2024 All rights reserved by:</p>
-                <span class="text-blue-500 font-medium">V P Dabhi & Co.</span>
+    </div>
+</nav>
+
+<section class="relative min-h-[500px] flex items-center overflow-hidden pt-20">
+    <div class="absolute inset-0">
+        <img src="https://wallpapers.com/images/hd/accounting-charts-and-calculator-cgo38sr66idh025c.jpg"
+             alt="Direct Tax"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/90"></div>
+    </div>
+
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 -left-20 w-96 h-96 bg-purple-300 opacity-20 animate-blob"></div>
+        <div class="absolute bottom-20 -right-20 w-96 h-96 bg-blue-300 opacity-20 animate-blob animation-delay-2000"></div>
+        <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-pink-300 opacity-20 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 w-full text-center text-white z-10">
+        <div class="inline-flex items-center gap-3 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6">
+            <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+            <span class="text-sm font-semibold">Our Services</span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 font-serif">
+            Direct Tax
+        </h1>
+
+        <p class="text-xl opacity-90 max-w-2xl mx-auto">
+            Strategic tax planning and optimization services to minimize liabilities and maximize savings
+        </p>
+    </div>
+</section>
+
+<section class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 hover:shadow-2xl transition-all duration-300">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-receipt text-white text-2xl"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold font-serif">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Overview</span>
+                </h2>
+            </div>
+
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                <p>Direct tax consultancy in India involves providing expert advice and strategies to optimize tax efficiency for businesses and individuals. This consultancy forms an essential part of making viable business decisions, helping clients achieve their financial goals. A "result-oriented approach" is adopted, focusing on flexibility, delivery, and value, which enhances the impact of commercially viable decisions and minimizes the tax burden.</p>
             </div>
         </div>
-    </footer>
 
-    <!-- script -->
-    <script src="../script.js"></script>
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 hover:shadow-2xl transition-all duration-300">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-calculator text-white text-2xl"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold font-serif">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Direct Tax</span>
+                </h2>
+            </div>
+
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                <p>Our firm provides comprehensive tax planning and advisory services to assist clients in optimizing their tax liabilities. We develop tax-efficient strategies, advise on the tax implications of business decisions, and structure transactions to minimize tax exposure.</p>
+
+                <p>In terms of compliance and reporting, we ensure strict adherence to tax laws and regulations, prepare and file tax returns accurately and timely, and maintain proper documentation to support tax positions.</p>
+
+                <p>We also offer representation and litigation support, representing clients before tax authorities during audits and assessments, assisting in preparing and presenting appeals against tax assessments, and providing support during tax litigation and dispute resolution.</p>
+
+                <p>Our expertise extends to transfer pricing, where we advise on regulations and documentation, ensure compliance with arm's length pricing principles, and assist in preparing and filing transfer pricing reports.</p>
+
+                <p>Additionally, we provide guidance on international taxation, advising on cross-border tax issues, structuring international transactions to optimize tax outcomes, and assisting with compliance under international tax treaties.</p>
+
+                <p>The assessment and appeals process under the Indian Income Tax Act involves several steps to ensure accurate determination and collection of taxes. This includes self-assessment by taxpayers, assessment by tax authorities, and the appeals procedure, which progresses through various stages from the Commissioner (Appeals) to the Supreme Court.</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl shadow-xl p-8 md:p-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-list-check text-white text-2xl"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold font-serif">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Our Direct Tax Services</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-secondary transition-all">
+                            <i class="fas fa-file-invoice text-primary text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">ITR Filing</h3>
+                            <p class="text-sm text-gray-600">Complete income tax return preparation and filing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-secondary transition-all">
+                            <i class="fas fa-bell text-primary text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Income Tax Notice Reply</h3>
+                            <p class="text-sm text-gray-600">Expert assistance in responding to tax notices</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-secondary transition-all">
+                            <i class="fas fa-plane-departure text-primary text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">NRI Tax Filing Services</h3>
+                            <p class="text-sm text-gray-600">Specialized tax services for Non-Resident Indians</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-secondary transition-all">
+                            <i class="fas fa-percent text-primary text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">TDS Returns Filing</h3>
+                            <p class="text-sm text-gray-600">Preparation and filing of TDS returns</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group md:col-span-2">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-secondary transition-all">
+                            <i class="fas fa-file-alt text-primary text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Various Form Filling Services</h3>
+                            <p class="text-sm text-gray-600">Assistance with all tax-related form submissions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 relative overflow-hidden bg-gradient-to-br from-primary to-secondary">
+    <div class="absolute inset-0">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center text-white">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 font-serif">
+            Ready to Optimize Your Taxes?
+        </h2>
+        <p class="text-xl mb-12 opacity-90">
+            Let's help you with strategic tax planning and compliance
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="../contactUs.html"
+               class="px-10 py-4 bg-white text-primary rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden group">
+                <span class="relative z-10">Contact Us Now <i class="fas fa-arrow-right ml-2"></i></span>
+                <span class="absolute inset-0 bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            </a>
+            <a href="tel:8866865166"
+               class="px-10 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300">
+                <i class="fas fa-phone mr-2"></i>
+                Call Us Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="lg:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="../image/CA-India-Logo.png" alt="CA Logo" class="w-14 h-14 object-contain">
+                    <div>
+                        <h3 class="text-2xl font-bold font-serif">V P Dabhi & Co.</h3>
+                        <p class="text-sm text-gray-400">Chartered Accountants</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 mb-6 max-w-md">
+                    Professional accounting services with dedication, discipline and determination.
+                    Your trusted partner for comprehensive financial solutions.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/v.p.dabhi_and_co/"
+                       class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-br hover:from-primary hover:to-secondary transition-all duration-300 group">
+                        <i class="fab fa-instagram text-xl group-hover:scale-110 transition-transform"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/v-pdabhi-co"
+                       class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-br hover:from-primary hover:to-secondary transition-all duration-300 group">
+                        <i class="fab fa-linkedin text-xl group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="audit_services.html" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        Audit Services
+                    </a></li>
+                    <li><a href="allied_services.html" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        Allied Services
+                    </a></li>
+                    <li><a href="indirect_tax.html" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        Indirect Tax
+                    </a></li>
+                    <li><a href="direct_tax.html" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        Direct Tax
+                    </a></li>
+                    <li><a href="financial_management.html" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        Financial Management
+                    </a></li>
+                    <li><a href="business_advisory.html" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        Business Advisory
+                    </a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3 text-gray-400">
+                        <i class="fas fa-map-marker-alt text-primary mt-1"></i>
+                        <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46" class="hover:text-white transition-colors">
+                            306 Shreyash Complex<br>
+                            Vejalpur, Ahmedabad<br>
+                            Gujarat, India
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-400">
+                        <i class="fas fa-phone text-primary"></i>
+                        <a href="tel:8866865166" class="hover:text-white transition-colors">
+                            88668 65166
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-400 text-sm text-center md:text-left">
+                © <span x-text="new Date().getFullYear()"></span> V P Dabhi & Co. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-sm text-gray-400">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
