@@ -2,530 +2,204 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | JPVD & Co. Chartered Accountants, Ahmedabad</title>
+    <meta name="description" content="Contact JPVD & Co. Chartered Accountants at 306 Shreyash Complex, Vejalpur, Ahmedabad. Phone +91 88668 65166.">
+    <meta property="og:title" content="Contact Us | JPVD & Co. Chartered Accountants, Ahmedabad">
+    <meta property="og:description" content="Contact JPVD & Co. Chartered Accountants at 306 Shreyash Complex, Vejalpur, Ahmedabad. Phone +91 88668 65166.">
+    <meta property="og:type" content="website">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="theme-color" content="#163d70">
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32.png">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link rel="shortcut icon" href="image/favicon.png">
-
-    <link rel="stylesheet" href="style.css">
-
-    <title>Contact Us - JPVD & Co.</title>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#667eea',
-                        secondary: '#764ba2',
-                        accent: '#f093fb',
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    }
-                }
-            }
-        }
+    <link rel="preload" href="fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+        "name": "JPVD & Co. Chartered Accountants",
+        "telephone": "+91-88668-65166",
+        "email": "vpdabhiandco@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "306 Shreyash Complex, Vejalpur",
+            "addressLocality": "Ahmedabad",
+            "addressRegion": "Gujarat",
+            "addressCountry": "IN"
+        },
+        "openingHoursSpecification": [
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "15:30"}
+        ],
+        "hasMap": "https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46",
+        "sameAs": ["https://www.instagram.com/v.p.dabhi_and_co/", "https://www.linkedin.com/company/v-pdabhi-co"]
+    }
     </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<body class="bg-gradient-to-br from-gray-50 via-white to-purple-50 text-gray-900 antialiased"
-      x-data="{
-          mobileMenu: false,
-          scrolled: false
-      }"
-      x-init="
-          window.addEventListener('scroll', () => {
-              scrolled = window.pageYOffset > 20;
-          });
-      "
-      x-effect="mobileMenu ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'">
+    <div class="topbar">
+        <div class="container">
+            <ul>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+918866865166">+91 88668 65166</a></li>
+                <li class="topbar__extra"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:vpdabhiandco@gmail.com">vpdabhiandco@gmail.com</a></li>
+            </ul>
+            <ul class="topbar__extra">
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Mon to Fri 9:00 am to 6:00 pm, Sat 11:00 am to 3:30 pm</li>
+            </ul>
+        </div>
+    </div>
 
-<!-- Floating Action Buttons -->
-<div class="fixed right-8 bottom-8 z-50 flex flex-col gap-4">
-    <a href="tel:8866865166"
-       class="group relative w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300">
-        <i class="fas fa-phone text-white text-xl"></i>
-        <span class="absolute right-full mr-4 px-4 py-2 bg-gray-900 text-white rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all shadow-lg">
-                Call: 88668 65166
-            </span>
-    </a>
-
-    <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46"
-       class="group relative w-14 h-14 bg-gradient-to-br from-red-500 to-orange-500 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300">
-        <i class="fas fa-map-marker-alt text-white text-xl"></i>
-        <span class="absolute right-full mr-4 px-4 py-2 bg-gray-900 text-white rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all shadow-lg">
-                Location
-            </span>
-    </a>
-
-    <a href="#"
-       @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})"
-       x-show="scrolled"
-       x-transition:enter="transition ease-out duration-300"
-       x-transition:enter-start="opacity-0 scale-0"
-       x-transition:enter-end="opacity-100 scale-100"
-       class="w-14 h-14 bg-white border-2 border-purple-200 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 hover:border-primary">
-        <i class="fas fa-arrow-up text-primary text-xl"></i>
-    </a>
-</div>
-
-<!-- Navigation -->
-<nav class="fixed w-full z-40 transition-all duration-500"
-     :class="scrolled ? 'bg-white shadow-xl py-4' : 'bg-white/90 py-6'">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-4 group">
-                <img src="image/CA-India-Logo.png" alt="CA Logo" class="w-14 h-14 object-contain border-2 border-gray-200 rounded-lg p-2 group-hover:border-primary transition-all">
-                <div>
-                    <h1 class="text-2xl font-bold text-primary font-serif">JPVD & Co.</h1>
-                    <p class="text-xs text-gray-600 font-medium">Chartered Accountants</p>
-                </div>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">
+                <img src="image/CA-India-Logo.png" alt="" width="54" height="40">
+                <span>
+                    <span class="brand__name">JPVD & Co.</span>
+                    <span class="brand__tag">Chartered Accountants</span>
+                </span>
             </a>
 
-            <ul class="hidden lg:flex items-center gap-8">
-                <li><a href="index.html" class="text-gray-700 hover:text-primary transition-colors font-medium relative group">
-                    Home
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                </a></li>
-                <li><a href="index.html#services" class="text-gray-700 hover:text-primary transition-colors font-medium relative group">
-                    Services
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                </a></li>
-                <li><a href="index.html#about" class="text-gray-700 hover:text-primary transition-colors font-medium relative group">
-                    About
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                </a></li>
-                <li><a href="index.html#industries" class="text-gray-700 hover:text-primary transition-colors font-medium relative group">
-                    Industries
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-                </a></li>
-                <li>
-                    <a href="contactUs.html"
-                       class="px-8 py-3 bg-gradient-to-br from-primary to-secondary text-white rounded-full font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden group">
-                        <span class="relative z-10">Contact Us</span>
-                        <span class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"></span>
-                    </a>
-                </li>
-            </ul>
-
-            <button @click="mobileMenu = !mobileMenu"
-                    class="lg:hidden w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg">
-                <i class="fas text-white text-xl transition-transform duration-300"
-                   :class="mobileMenu ? 'fa-times' : 'fa-bars'"></i>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <svg class="icon icon--menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+                <svg class="icon icon--close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
+
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <ul class="nav__list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#founder">Our Founder</a></li>
+                        <li><a href="contactUs.html" aria-current="page">Contact Us</a></li>
+                </ul>
+                <ul class="nav__contact">
+                    <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+918866865166">+91 88668 65166</a></li>
+                    <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:vpdabhiandco@gmail.com">vpdabhiandco@gmail.com</a></li>
+                    <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Mon to Fri: 9:00 am to 6:00 pm<br>Sat: 11:00 am to 3:30 pm, Sun: Closed</span></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- Mobile Menu -->
-    <div x-show="mobileMenu"
-         x-transition:enter="transition ease-out duration-300"
-         x-transition:enter-start="opacity-0"
-         x-transition:enter-end="opacity-100"
-         @click="mobileMenu = false"
-         class="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
+    <main id="main">
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Contact Us</li>
+                    </ol>
+                </nav>
+                <h1>Contact Us</h1>
+                <p>Call, email or visit our office. We are happy to help with your financial and tax matters.</p>
+            </div>
+        </section>
 
-        <div @click.stop
-             x-show="mobileMenu"
-             x-transition:enter="transition ease-out duration-300"
-             x-transition:enter-start="translate-x-full"
-             x-transition:enter-end="translate-x-0"
-             x-transition:leave="transition ease-in duration-200"
-             x-transition:leave-start="translate-x-0"
-             x-transition:leave-end="translate-x-full"
-             class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl overflow-y-auto">
-
-            <div class="bg-gradient-to-br from-primary to-secondary p-6 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <img src="image/CA-India-Logo.png" alt="CA Logo" class="w-12 h-12 object-contain">
-                    <div>
-                        <h3 class="text-white font-bold font-serif text-lg">JPVD & Co.</h3>
-                        <p class="text-white/80 text-xs">Chartered Accountants</p>
+        <section class="section">
+            <div class="container">
+                <div class="contact-boxes">
+                    <div class="contact-box">
+                        <span class="contact-box__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                        <h2>Phone</h2>
+                        <a href="tel:+918866865166">+91 88668 65166</a>
+                        <a href="tel:+918160202845">+91 81602 02845</a>
+                    </div>
+                    <div class="contact-box">
+                        <span class="contact-box__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                        <h2>Email</h2>
+                        <a href="mailto:vpdabhiandco@gmail.com">vpdabhiandco@gmail.com</a>
+                        <a href="mailto:cavishvajitsinhdabhi@gmail.com">cavishvajitsinhdabhi@gmail.com</a>
+                    </div>
+                    <div class="contact-box">
+                        <span class="contact-box__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                        <h2>Office Address</h2>
+                        <p>306 Shreyash Complex, Vejalpur, Ahmedabad, Gujarat</p>
+                        <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46" target="_blank" rel="noopener">Get directions</a>
+                    </div>
+                    <div class="contact-box">
+                        <span class="contact-box__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                        <h2>Office Hours</h2>
+                        <table class="hours">
+                            <tr><td>Mon to Fri</td><td>9:00 am to 6:00 pm</td></tr>
+                            <tr><td>Saturday</td><td>11:00 am to 3:30 pm</td></tr>
+                            <tr><td>Sunday</td><td>Closed</td></tr>
+                        </table>
                     </div>
                 </div>
-                <button @click="mobileMenu = false" class="text-white text-2xl">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
 
-            <ul class="p-6 space-y-2">
-                <li>
-                    <a href="index.html" @click="mobileMenu = false"
-                       class="block px-6 py-4 text-gray-700 hover:bg-purple-50 hover:text-primary rounded-xl transition-all font-medium flex items-center gap-3">
-                        <i class="fas fa-home w-5"></i>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html#services" @click="mobileMenu = false"
-                       class="block px-6 py-4 text-gray-700 hover:bg-purple-50 hover:text-primary rounded-xl transition-all font-medium flex items-center gap-3">
-                        <i class="fas fa-briefcase w-5"></i>
-                        Services
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html#about" @click="mobileMenu = false"
-                       class="block px-6 py-4 text-gray-700 hover:bg-purple-50 hover:text-primary rounded-xl transition-all font-medium flex items-center gap-3">
-                        <i class="fas fa-info-circle w-5"></i>
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html#industries" @click="mobileMenu = false"
-                       class="block px-6 py-4 text-gray-700 hover:bg-purple-50 hover:text-primary rounded-xl transition-all font-medium flex items-center gap-3">
-                        <i class="fas fa-industry w-5"></i>
-                        Industries
-                    </a>
-                </li>
-                <li>
-                    <a href="contactUs.html"
-                       class="block px-6 py-4 bg-gradient-to-br from-primary to-secondary text-white text-center rounded-xl font-semibold shadow-lg flex items-center justify-center gap-3">
-                        <i class="fas fa-envelope"></i>
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
-
-            <div class="p-6 border-t">
-                <p class="text-gray-600 text-sm mb-4">Connect with us</p>
-                <div class="flex gap-3">
-                    <a href="https://www.instagram.com/v.p.dabhi_and_co/"
-                       class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform">
-                        <i class="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/v-pdabhi-co"
-                       class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
+                <div class="map">
+                    <iframe
+                        title="Map showing the JPVD & Co. office in Vejalpur, Ahmedabad"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d918.1462029672987!2d72.5174425!3d23.0022902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bb8ad72b6df%3A0x51571573934a03ee!2sV%20P%20Dabhi%20%26%20Co!5e0!3m2!1sen!2sin!4v1761311920497!5m2!1sen!2sin"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
-    </div>
-</nav>
+        </section>
+    </main>
 
-<!-- Hero Section -->
-<section class="relative min-h-[500px] flex items-center overflow-hidden pt-20">
-    <div class="absolute inset-0">
-        <img src="https://wallpapers.com/images/hd/accounting-charts-and-calculator-cgo38sr66idh025c.jpg"
-             alt="Contact Hero"
-             class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/90"></div>
-    </div>
-
-    <!-- Animated Blobs -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-20 -left-20 w-96 h-96 bg-purple-300 opacity-20 animate-blob"></div>
-        <div class="absolute bottom-20 -right-20 w-96 h-96 bg-blue-300 opacity-20 animate-blob [animation-delay:2s]"></div>
-        <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-pink-300 opacity-20 animate-blob [animation-delay:4s]"></div>
-    </div>
-
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 w-full text-center text-white z-10">
-        <div class="inline-flex items-center gap-3 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6">
-            <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-            <span class="text-sm font-semibold">Get In Touch</span>
-        </div>
-
-        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 font-serif">
-            Contact Us
-        </h1>
-
-        <p class="text-xl opacity-90 max-w-2xl mx-auto">
-            We're here to help you with all your financial needs
-        </p>
-    </div>
-</section>
-
-<!-- Contact Information Section -->
-<section class="py-24 relative">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Get In Touch Card -->
-            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 p-8 group">
-                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <i class="fas fa-phone text-white text-2xl"></i>
-                </div>
-
-                <h2 class="text-3xl font-bold mb-6 font-serif">
-                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Get In Touch</span>
-                </h2>
-
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Work Inquiries</h3>
-                        <div class="space-y-2">
-                            <a href="tel:8866865166" class="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors group/link">
-                                <i class="fas fa-phone text-primary"></i>
-                                <span class="group-hover/link:underline">88668 65166</span>
-                            </a>
-                            <a href="tel:8160202845" class="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors group/link">
-                                <i class="fas fa-phone text-primary"></i>
-                                <span class="group-hover/link:underline">81602 02845</span>
-                            </a>
-                        </div>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a class="brand" href="index.html">
+                    <img src="image/CA-India-Logo.png" alt="" width="54" height="40">
+                    <span>
+                        <span class="brand__name">JPVD & Co.</span>
+                        <span class="brand__tag">Chartered Accountants</span>
+                    </span>
+                </a>
+                <p>To be a trusted professional firm known for sound planning and valued decisions, helping clients achieve sustainable growth, compliance excellence and long-term financial clarity.</p>
+                <div class="social">
+                        <a href="https://www.instagram.com/v.p.dabhi_and_co/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+                        <a href="https://www.linkedin.com/company/v-pdabhi-co" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
                     </div>
-
-                    <div class="pt-4 border-t border-gray-200">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Assistance Hours</h3>
-                        <div class="space-y-2 text-gray-600">
-                            <p class="flex items-center gap-2">
-                                <i class="fas fa-clock text-primary text-sm"></i>
-                                <span>Mon - Fri: 9:00am - 6:00pm</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <i class="fas fa-clock text-primary text-sm"></i>
-                                <span>Sat: 11:00am - 3:30pm</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <i class="fas fa-clock text-primary text-sm"></i>
-                                <span>Sunday: CLOSED</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Address and Email Card -->
-            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 p-8 group">
-                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <i class="fas fa-map-marker-alt text-white text-2xl"></i>
-                </div>
-
-                <h2 class="text-3xl font-bold mb-6 font-serif">
-                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Address & Mail</span>
-                </h2>
-
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Office Address</h3>
-                        <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46"
-                           target="_blank"
-                           class="flex items-start gap-3 text-gray-600 hover:text-primary transition-colors group/link">
-                            <i class="fas fa-location-dot text-primary mt-1"></i>
-                            <span class="group-hover/link:underline">306 Shreyash Complex, Vejalpur, Ahmedabad, Gujarat</span>
-                        </a>
-                    </div>
-
-                    <div class="pt-4 border-t border-gray-200">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Email Address</h3>
-                        <div class="space-y-2">
-                            <a href="mailto:cavishvajitsinhdabhi@gmail.com"
-                               class="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors group/link">
-                                <i class="fas fa-envelope text-primary"></i>
-                                <span class="group-hover/link:underline text-sm">cavishvajitsinhdabhi@gmail.com</span>
-                            </a>
-                            <a href="mailto:vpdabhiandco@gmail.com"
-                               class="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors group/link">
-                                <i class="fas fa-envelope text-primary"></i>
-                                <span class="group-hover/link:underline">vpdabhiandco@gmail.com</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Social Media Card -->
-            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 p-8 group md:col-span-2 lg:col-span-1">
-                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <i class="fas fa-share-nodes text-white text-2xl"></i>
-                </div>
-
-                <h2 class="text-3xl font-bold mb-6 font-serif">
-                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Social Media</span>
-                </h2>
-
-                <p class="text-gray-600 mb-6">Connect with us on social platforms</p>
-
-                <div class="flex gap-4">
-                    <a href="https://www.instagram.com/v.p.dabhi_and_co/"
-                       target="_blank"
-                       class="flex-1 group/social">
-                        <div class="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
-                            <i class="fab fa-instagram text-white text-3xl mb-3"></i>
-                            <p class="text-white font-semibold">Instagram</p>
-                            <p class="text-white/80 text-sm mt-1">Follow Us</p>
-                        </div>
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/v-pdabhi-co"
-                       target="_blank"
-                       class="flex-1 group/social">
-                        <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
-                            <i class="fab fa-linkedin text-white text-3xl mb-3"></i>
-                            <p class="text-white font-semibold">LinkedIn</p>
-                            <p class="text-white/80 text-sm mt-1">Connect Now</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="mt-8 pt-6 border-t border-gray-200">
-                    <p class="text-sm text-gray-600 mb-4">Stay updated with our latest news</p>
-                    <div class="flex gap-2">
-                        <a href="https://www.instagram.com/v.p.dabhi_and_co/"
-                           class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 hover:bg-gradient-to-br hover:from-primary hover:to-secondary hover:text-white transition-all">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/v-pdabhi-co"
-                           class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 hover:bg-gradient-to-br hover:from-primary hover:to-secondary hover:text-white transition-all">
-                            <i class="fab fa-linkedin text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Map Section -->
-<section class="py-24 bg-gradient-to-br from-purple-50 to-blue-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <div class="inline-flex items-center gap-3 px-4 py-2 bg-white rounded-full mb-4 shadow-lg">
-                <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-                <span class="text-sm font-semibold text-primary">Find Us</span>
-            </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 font-serif">
-                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Visit Our Office</span>
-            </h2>
-            <p class="text-xl text-gray-600">We'd love to meet you in person</p>
-        </div>
-
-        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d918.1462029672987!2d72.5174425!3d23.0022902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bb8ad72b6df%3A0x51571573934a03ee!2sV%20P%20Dabhi%20%26%20Co!5e0!3m2!1sen!2sin!4v1761311920497!5m2!1sen!2sin"
-                    width="100%"
-                    height="500"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    class="w-full">
-            </iframe>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="py-24 relative overflow-hidden bg-gradient-to-br from-primary to-secondary">
-    <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl"></div>
-    </div>
-
-    <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center text-white">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 font-serif">
-            Ready to Get Started?
-        </h2>
-        <p class="text-xl mb-12 opacity-90">
-            Let's discuss how we can help you achieve your financial goals
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="tel:8866865166"
-               class="px-10 py-4 bg-white text-primary rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 relative overflow-hidden group">
-                <span class="relative z-10"><i class="fas fa-phone mr-2"></i> Call Us Now</span>
-                <span class="absolute inset-0 bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-            </a>
-            <a href="mailto:vpdabhiandco@gmail.com"
-               class="px-10 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300">
-                <i class="fas fa-envelope mr-2"></i>
-                Email Us
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-            <div class="lg:col-span-2">
-                <div class="flex items-center gap-4 mb-6">
-                    <img src="image/CA-India-Logo.png" alt="CA Logo" class="w-14 h-14 object-contain">
-                    <div>
-                        <h3 class="text-2xl font-bold font-serif">JPVD & Co.</h3>
-                        <p class="text-sm text-gray-400">Chartered Accountants</p>
-                    </div>
-                </div>
-                <p class="text-gray-400 mb-6 max-w-md">
-                    To be a trusted professional firm kown for justified planning and valued decisions, enablidng clients to achieve sustainable growth,
-                    capliance excellence, and long-term financial clarity in a dynamic business environment.
-                </p>
-                <div class="flex gap-4">
-                    <a href="https://www.instagram.com/v.p.dabhi_and_co/"
-                       class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-br hover:from-primary hover:to-secondary transition-all duration-300 group">
-                        <i class="fab fa-instagram text-xl group-hover:scale-110 transition-transform"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/v-pdabhi-co"
-                       class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-gradient-to-br hover:from-primary hover:to-secondary transition-all duration-300 group">
-                        <i class="fab fa-linkedin text-xl group-hover:scale-110 transition-transform"></i>
-                    </a>
-                </div>
             </div>
 
             <div>
-                <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-                <ul class="space-y-3">
-                    <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        Home
-                    </a></li>
-                    <li><a href="index.html#services" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        Services
-                    </a></li>
-                    <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        About Us
-                    </a></li>
-                    <li><a href="index.html#industries" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        Industries
-                    </a></li>
-                    <li><a href="contactUs.html" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                        <i class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                        Contact Us
-                    </a></li>
+                <h2>Services</h2>
+                <ul class="footer-links">
+                        <li><a href="services/audit_services.html">Audit Services</a></li>
+                        <li><a href="services/allied_services.html">Allied Services</a></li>
+                        <li><a href="services/indirect_tax.html">Indirect Tax</a></li>
+                        <li><a href="services/direct_tax.html">Direct Tax</a></li>
+                        <li><a href="services/financial_management.html">Financial Management</a></li>
+                        <li><a href="services/business_advisory.html">Business Advisory</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-lg font-bold mb-6">Contact Info</h4>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3 text-gray-400">
-                        <i class="fas fa-map-marker-alt text-primary mt-1"></i>
-                        <a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46" class="hover:text-white transition-colors">
-                            306 Shreyash Complex<br>
-                            Vejalpur, Ahmedabad<br>
-                            Gujarat, India
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-3 text-gray-400">
-                        <i class="fas fa-phone text-primary"></i>
-                        <a href="tel:8866865166" class="hover:text-white transition-colors">
-                            88668 65166
-                        </a>
-                    </li>
+                <h2>Quick Links</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#founder">Our Founder</a></li>
+                    <li><a href="index.html#industries">Industries</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contact</h2>
+                <ul class="footer-contact">
+                    <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.app.goo.gl/o9o4N16LdSQ3xEQ46" target="_blank" rel="noopener">306 Shreyash Complex, Vejalpur, Ahmedabad, Gujarat</a></li>
+                    <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+918866865166">+91 88668 65166</a></li>
+                    <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:vpdabhiandco@gmail.com">vpdabhiandco@gmail.com</a></li>
+                    <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Mon to Fri: 9:00 am to 6:00 pm<br>Sat: 11:00 am to 3:30 pm<br>Sun: Closed</span></li>
                 </ul>
             </div>
         </div>
-
-        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-gray-400 text-sm text-center md:text-left">
-                © <span x-text="new Date().getFullYear()"></span> JPVD & Co. All rights reserved.
-            </p>
-            <div class="flex gap-6 text-sm text-gray-400">
-                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-            </div>
+        <div class="footer-bottom">
+            <div class="container">© <span data-year>2026</span> JPVD & Co. Chartered Accountants. All rights reserved.</div>
         </div>
-    </div>
-</footer>
+    </footer>
 
+    <a class="call-btn" href="tel:+918866865166" aria-label="Call +91 88668 65166"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
 </body>
 </html>
